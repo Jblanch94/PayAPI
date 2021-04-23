@@ -1,0 +1,149 @@
+@import './base.scss';
+@import './components/navbar.scss';
+@import './components/footer.scss';
+@import './components/demo.scss';
+
+// Add some margin to align with navbar
+main {
+  margin: 5rem 3rem;
+
+  @media screen and (min-width: 1008px) {
+    margin: 5rem 15rem;
+  }
+}
+
+.lg-header {
+  color: $san-juan-blue;
+  margin-top: 1.5em;
+
+  @media screen and (min-width: 1008px) {
+    text-align: left;
+  }
+}
+
+// 3 Pricing Sections
+.pricing {
+  text-align: center;
+
+  // For tablet and Desktop make a 3 column layout
+  @media screen and (min-width: 641px) {
+    display: flex;
+    align-items: center;
+
+    &--free,
+    &--premium,
+    &--basic {
+      margin: 0 1em;
+    }
+  }
+
+  @media screen and (min-width: 1008px) {
+    text-align: left;
+  }
+
+  &--free--content,
+  &--basic--content,
+  &--premium--content {
+    margin-bottom: 3em;
+    h2 {
+      color: $dark-pink;
+      font-family: 'DM Serif Display', sans-serif;
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+
+      @media screen and (min-width: 641px) {
+        line-height: 4rem;
+      }
+
+      @media screen and (min-width: 1008px) {
+        font-size: 3.2rem;
+      }
+    }
+
+    p {
+      display: none;
+
+      @media screen and (min-width: 641px) {
+        display: block;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+        color: $light-san-juan-blue;
+        width: 90%;
+      }
+
+      @media screen and (min-width: 1008px) {
+        width: 80%;
+      }
+    }
+  }
+
+  &--free--features,
+  &--basic--features,
+  &--premium--features {
+    &__header {
+      h3 {
+        font-family: 'DM Serif Display', sans-serif;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 7.2rem;
+        color: $san-juan-blue;
+      }
+    }
+
+    // Container to center the list in the middle
+    .container {
+      border-top: 1px solid rgba(54, 83, 107, 0.25);
+      border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+
+      @media screen and (min-width: 1008px) {
+        justify-content: flex-start;
+      }
+    }
+
+    &--list {
+      padding: 1em 0;
+      text-align: left;
+
+      li {
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        color: $san-juan-blue;
+        position: relative;
+
+        @media screen and (min-width: 1008px) {
+          padding-left: 2em;
+        }
+
+        &.disabled {
+          opacity: 0.5;
+        }
+
+        // Display a checked icon for each li that has a class of checked
+        &.checked {
+          &::before {
+            content: url('../../assets/shared/desktop/icon-check.svg');
+            position: absolute;
+            left: -30px;
+
+            @media screen and (min-width: 1008px) {
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    margin: 1em 0 4em 0;
+  }
+}
+
+.start {
+  margin-top: 0;
+}

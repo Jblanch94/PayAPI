@@ -1,0 +1,132 @@
+.header {
+  margin: 5rem 3rem;
+
+  @media screen and (min-width: 1008px) {
+    margin: 5rem 15rem;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .links-container {
+      display: none;
+
+      @media screen and (max-width: 640px) {
+        &.active {
+          display: block;
+          text-align: center;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 80vw;
+          background-color: $mirage-blue;
+          z-index: 10;
+          padding: 0 3rem;
+
+          .nav__links {
+            margin: 10rem 0 0 0;
+            padding: 2rem 0;
+            border-top: 1px solid $link-water-white;
+            text-align: center;
+
+            &--item {
+              font-family: 'Public Sans', sans-serif;
+              font-weight: 700;
+              font-size: 2rem;
+              line-height: 2.35rem;
+              margin-top: 3rem;
+              a {
+                color: $link-water-white;
+                opacity: 0.75;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+
+            &--demo {
+              margin-top: 1rem;
+              width: 100%;
+              font-family: 'Public Sans', sans-serif;
+              font-weight: 700;
+              font-size: 1.5rem;
+              line-height: 1.76rem;
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: 641px) {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 0 4rem;
+
+        .nav__links {
+          display: flex;
+
+          &--item {
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.76rem;
+            margin: 0 1.5rem;
+
+            a {
+              color: $san-juan-blue;
+              opacity: 0.7;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+
+          &--demo {
+            position: absolute;
+            top: 52px;
+            right: 15px;
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.76rem;
+
+            @media screen and (min-width: 1008px) {
+              right: 150px;
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger-btn {
+      display: inline-block;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+      border: none;
+
+      @media screen and (min-width: 641px) {
+        display: none;
+      }
+    }
+  }
+
+  .close-btn {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+
+    &.show {
+      @media screen and (max-width: 640px) {
+        display: inline-block;
+        z-index: 10;
+      }
+    }
+  }
+}

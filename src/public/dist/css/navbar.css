@@ -1,0 +1,21 @@
+.header {
+  padding: 5rem 3rem; }
+  .header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .nav .hamburger-btn {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      cursor: pointer; }
+    @media screen and (min-width: 641px) {
+      .header .nav .nav__links {
+        display: flex; }
+        .header .nav .nav__links--item {
+          border: 1px solid black;
+          margin: 0 2rem;
+          font-family: 'Public Sans', sans-serif;
+          font-weight: 700; }
+      .header .nav .hamburger-btn {
+        display: none; } }

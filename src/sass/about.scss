@@ -1,0 +1,142 @@
+@import './base.scss';
+@import './components/navbar.scss';
+@import './components/footer.scss';
+@import './components/demo.scss';
+
+.lg-header {
+  color: $san-juan-blue;
+}
+
+.about {
+  margin-top: 8rem;
+  &__philosphy {
+    margin: 5rem 3rem;
+
+    @media screen and (min-width: 1008px) {
+      margin: 5rem 15rem;
+    }
+    &--content {
+      margin: 4rem 0;
+
+      @media screen and (min-width: 641px) {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .sm-header {
+        color: $san-juan-blue;
+        flex: 1;
+
+        @media screen and (min-width: 641px) {
+          font-size: 3.2rem;
+          line-height: 4rem;
+        }
+      }
+
+      .body-text {
+        color: $light-san-juan-blue;
+        flex: 2;
+
+        @media screen and (min-width: 641px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  // Team Section
+  &__team {
+    width: 100%;
+    &--img {
+      width: 100%;
+
+      img,
+      source {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid $san-juan-blue;
+      border-bottom: 1px solid $san-juan-blue;
+      margin: 5rem 3rem;
+
+      @media screen and (min-width: 641px) {
+        flex-direction: row;
+        border: none;
+        text-align: left;
+      }
+
+      @media screen and (min-width: 1008px) {
+        margin: 5rem 15rem;
+      }
+
+      .about__team--numbers {
+        @media screen and (min-width: 641px) {
+          margin: 0 1rem;
+          padding: 1rem 0;
+          border-bottom: 1px solid $san-juan-blue;
+          border-top: 1px solid $san-juan-blue;
+          flex: 1;
+        }
+
+        @media screen and (min-width: 1008px) {
+          justify-content: flex-start;
+        }
+
+        .body-text {
+          color: $san-juan-blue;
+          opacity: 0.7;
+        }
+
+        h3 {
+          font-family: 'DM Serif Display', sans-serif;
+          font-weight: 400;
+          font-size: 5.6rem;
+          line-height: 7.2rem;
+          color: $dark-pink;
+        }
+      }
+    }
+
+    &--content {
+      margin: 4rem 0;
+      margin: 5rem 3rem;
+
+      @media screen and (min-width: 1008px) {
+        margin: 5rem 15rem;
+      }
+
+      @media screen and (min-width: 641px) {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .sm-header {
+        color: $san-juan-blue;
+        flex: 1;
+
+        @media screen and (min-width: 641px) {
+          font-size: 3.2rem;
+          line-height: 4rem;
+        }
+      }
+
+      .body-text {
+        color: $light-san-juan-blue;
+        flex: 2;
+
+        @media screen and (min-width: 641px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

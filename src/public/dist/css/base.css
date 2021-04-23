@@ -1,0 +1,130 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* Import Utilities (Variables and Utility Classes) */
+.d-none {
+  display: none !important; }
+
+.d-block {
+  display: block !important; }
+
+.d-inlineBlock {
+  display: inline-block !important; }
+
+.full-container {
+  width: 100%; }
+
+.text-center {
+  text-align: center; }
+
+/* Utility Classes for Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 2.4rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem; }
+
+.btn-primary {
+  background-color: #ba4270;
+  color: #fbfcfe; }
+  .btn-primary:hover {
+    background-color: #da6d97; }
+  .btn-primary:active {
+    opacity: 0.5; }
+
+.btn-secondary {
+  background-color: #1b262f;
+  border: 1px solid #fbfcfe;
+  color: #fbfcfe;
+  border-radius: 2.4rem; }
+  .btn-secondary:hover {
+    background-color: #fbfcfe;
+    color: #1b262f; }
+  .btn-secondary:active {
+    opacity: 0.5; }
+
+.btn-secondary-dark {
+  background-color: #fbfcfe;
+  color: #36536b;
+  border: 1px solid #36536b;
+  border-radius: 2.4rem; }
+  .btn-secondary-dark:hover {
+    background-color: #36536b;
+    color: #fbfcfe; }
+  .btn-secondary-dark:active {
+    opacity: 0.5; }
+
+.body-text {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: #fbfcfe;
+  opacity: 0.7; }
+
+.lg-header {
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.6rem; }
+  @media screen and (min-width: 641px) {
+    .lg-header {
+      font-size: 4.8rem;
+      line-height: 5.6rem; } }
+
+.sm-header {
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 4rem; }
+
+.demo-input {
+  margin-bottom: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 2.4rem;
+  padding: 1rem;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #36536b;
+  opacity: 0.5;
+  background: #fbfcfe; }
+
+.container {
+  display: flex;
+  justify-content: center; }
+
+.contact-input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
+  padding: 0.5em 0 1em 1em;
+  margin: 0.5em 0;
+  background: #fbfcfe; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inheirt; }
+
+html {
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box;
+  font-size: 100%;
+  background-color: #f2f2f2; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+li {
+  text-decoration: none; }

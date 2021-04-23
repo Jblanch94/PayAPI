@@ -1,0 +1,72 @@
+// Start Section
+.start {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1008px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h1 {
+    opacity: 1;
+    color: $san-juan-blue;
+
+    @media screen and (min-width: 1008px) {
+      flex: 1;
+    }
+  }
+
+  &__demo {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem;
+    margin-top: 3rem;
+    justify-content: center;
+
+    @media screen and (min-width: 641px) {
+      position: relative;
+      flex-direction: row;
+      padding: 0 5rem;
+    }
+
+    @media screen and (min-width: 1008px) {
+      padding: 0;
+      width: 50%;
+    }
+
+    input {
+      margin-bottom: 2rem;
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+
+      @media screen and (min-width: 641px) {
+        width: 50%;
+      }
+
+      @media screen and (min-width: 1008px) {
+        width: 60%;
+      }
+    }
+
+    button {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 2.4rem;
+
+      @media screen and (min-width: 641px) {
+        position: absolute;
+        right: 10rem;
+        bottom: 1.5rem;
+      }
+
+      @media screen and (min-width: 1008px) {
+        padding: 1rem;
+        bottom: 2rem;
+        right: 5rem;
+      }
+    }
+  }
+}
